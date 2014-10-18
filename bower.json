@@ -1,0 +1,26 @@
+{
+  "name": "jslegend",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nedroid/jslegend",
+  "authors": [
+    "Nejc <nejc.silc@gmail.com>"
+  ],
+  "description": "Tree legend",
+  "main": "legend.js",
+  "keywords": [
+    "legend",
+    "tree",
+    "cutom"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3"
+  }
+}
