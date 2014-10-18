@@ -3,6 +3,10 @@ jslegend
 
 ## Example
 
+#### result
+
+[preview]: http://htmlpreview.github.io/?https://github.com/nedroid/jslegend/blob/master/demo/index.html
+
 #### config file
 
 ```javascript
@@ -43,7 +47,5 @@ jslegend
   }]
 }
 ```
-
-#### result
 
 
