@@ -1,7 +1,10 @@
 jslegend
 ========
 
-example
+## Example
+
+#### config file
+
 ```javascript
 {
   //id: 'legendaId', 
@@ -36,7 +39,11 @@ example
     children: [{
       name: 'Child one',
       children: []
-    }, ]
-  }, ]
+    }]
+  }]
 }
 ```
+
+#### result
+
+
