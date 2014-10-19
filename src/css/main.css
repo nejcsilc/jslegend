@@ -8,3 +8,6 @@
   cursor: pointer;
   margin: 5px;
 }
+.legend .dropdown-toggle > span {
+  margin-left: 5px;
+}

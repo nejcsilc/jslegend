@@ -4,37 +4,98 @@ var json = {
   //id: 'legendaId', 
   elements: {
     root: {
-      0: [$el.chevron, $el.rootCheckbox, $el.text],
+      0: [$el.chevron, $el.rootCheckbox, $el.dropdownS, $el.text],
       4: [$el.chevron]
     },
     list: {
-      0: [$el.checkbox, $el.text],
+      0: [$el.checkbox, $el.dropdown, $el.text],
       3: [$el.text]
     }
 
   },
   data: [{
-    name: 'Root one',
-    checked: true,
-    children: [{
-      name: 'Child one',
-      //elements: [],
-      children: []
-    }, {
-      name: 'Child two',
-      checked: true,
+    text: {
+      value: 'Root one'
+    },
+    rootCheckbox: {
+      checked: true
+    },
+    dropdownS: {
+      dropup: false,
+      buttonText: 'Test',
       listeners: {
-        click: function(){alert('child two');}
+        click: function() {
+          alert('base action');
+        }
       },
-      children: []
+      lists: [{
+        //class: '',
+        //href: '',
+        listeners: {
+          click: function() {
+            alert('list clicked');
+          }
+        }
+      }, {
+        href: 'http://www.google.si',
+        text: 'Google'
+      }, {
+        class: 'divider'
+      }, {
+        text: 'Do nothing'
+      }]
+    },
+    children: [{
+      //elements: [],
+      children: [],
+      text: {
+        value: 'Child one'
+      },
+      dropdown: {
+        dropup: true,
+        buttonText: 'Test',
+        lists: [{
+          //class: '',
+          //href: '',
+          listeners: {
+            click: function() {
+              alert('test test test');
+            }
+          }
+        }, {
+          href: 'http://www.google.si',
+          text: 'Google'
+        }, {
+          class: 'divider'
+        }, {
+          text: 'Do nothing'
+        }]
+      }
+    }, {
+      children: [],
+      text: {
+        value: 'Child two'
+      },
+      checkbox: {
+        checked: true,
+        listeners: {
+          click: function() {
+            alert('child two');
+          }
+        }
+      }
     }, ]
   }, {
-    name: 'Root two',
+    text: {
+      value: 'Root two'
+    },
     children: [{
-      name: 'Child one',
-      children: []
-    }, ]
-  }, ]
+      children: [],
+      text: {
+        value: 'Child one'
+      }
+    }]
+  }]
 };
 
 $(function() {
